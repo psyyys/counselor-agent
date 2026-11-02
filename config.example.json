@@ -1,0 +1,14 @@
+{
+  "api_key": "在这里填千问(百炼)的 API Key，或者设置环境变量 DASHSCOPE_API_KEY",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "main_model": "qwen-plus",
+  "critic_model": "qwen-flash",
+  "main_temperature": 0.7,
+  "critic_temperature": 0.0,
+  "history_messages": 20,
+  "exemplars_per_turn": 3,
+  "skills_per_session": 12,
+  "manual_chunks_per_session": 4,
+  "max_revisions": 1,
+  "enable_thinking": false
+}
