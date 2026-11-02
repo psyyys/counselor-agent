@@ -9,6 +9,26 @@
 
 ---
 
+## 看看它的样子
+
+> 截图中的来访者"小禾"及全部对话、记录均为虚构的演示数据。
+
+| 对话：心情签到、快捷短语 | 幕后：督导退回重写、声音线索 |
+|---|---|
+| ![对话](docs/screenshots/2_对话.png) | ![幕后](docs/screenshots/3_幕后_督导与声音线索.png) |
+| **语音通话：像打电话一样说话** | **欢迎页：认出老朋友** |
+| ![语音通话](docs/screenshots/5_语音通话.png) | ![欢迎页](docs/screenshots/1_欢迎页.png) |
+
+**我的记录：心情变化、练习打卡、想法地图、随手记、会谈时间线**
+
+![我的记录](docs/screenshots/4_我的记录.png)
+
+| 设置：外观、对话、语音 | 手机 · 深色模式 |
+|---|---|
+| ![设置](docs/screenshots/6_设置.png) | <img src="docs/screenshots/7_手机_深色.png" width="300" alt="手机深色模式"> |
+
+---
+
 ## 特色
 
 ### 1. 用"约束"代替"微调"
@@ -101,6 +121,11 @@ tests/              离线测试（假模型）；tests/fake_server.py 可无 Ke
 - 会谈记录、个案档案、心情和随手记都只存在本机 `data/users/`
 - 对话内容会发送给你配置的模型服务商（例如阿里云百炼），请自行评估
 - 随手记不会发给模型
+
+## 作者
+**[psyyys](https://github.com/psyyys)**：项目发起、设计与临床方向把关。
+
+共同参与：Claude（Anthropic），协助代码实现、资料调研与文档编写。
 
 ## 致谢
 - 框架、范例与评测：[PsychEval](https://github.com/ECNU-ICALK/PsychEval)（Pan et al., 2026, arXiv 2601.01802），CC BY-NC 4.0

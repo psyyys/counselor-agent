@@ -151,6 +151,15 @@ def test_records_api(tmp_path, monkeypatch):
     assert c.get("/api/records/记录测试").json()["journal"] == []
 
 
+def test_page_has_no_duplicate_ids():
+    # 曾经图标 <symbol id="user"> 和代号输入框重名，$("#user") 取到图标，打字输入的代号读不到
+    import collections
+    import re
+    from counselor.config import WEB_DIR
+    ids = re.findall(r'\bid="([^"]+)"', (WEB_DIR / "index.html").read_text(encoding="utf-8"))
+    assert [k for k, v in collections.Counter(ids).items() if v > 1] == []
+
+
 def test_clean_for_speech():
     from counselor.voice import clean_for_speech
     assert clean_for_speech("**重点**\n- 第一条\n\n\n- 第二条") == "重点\n第一条\n第二条"
